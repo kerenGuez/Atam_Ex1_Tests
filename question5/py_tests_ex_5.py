@@ -110,11 +110,13 @@ def run_generic_tests(test_name, good_lis, bad_lis, asm_file, tests_file):
     for num in good_lis:
         print(f"{COLOR_YELLOW} Testing:{COLOR_END}'{num}'")
         generic_run_test(asm_file=asm_file, tests_file=tests_file, integer=num, legal=1, num_const=num)
+        print()
 
     print(f"{COLOR_YELLOW} --- Running Bad {test_name} Tests --- {COLOR_END}{bad_lis}")
     for num in bad_lis:
         print(f"{COLOR_YELLOW} Testing:{COLOR_END}'{num}'")
         generic_run_test(asm_file=asm_file, tests_file=tests_file, integer=0, legal=0, num_const=num)
+        print()
     print()
 
 
