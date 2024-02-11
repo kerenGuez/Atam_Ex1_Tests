@@ -1,0 +1,11 @@
+Run Command:
+python3 py_tests_ex_1.py ex1sample_test ex1.asm ../run_test.sh TRUE
+
+Given:
+1st Param: test file (py_tests_ex_1.py)
+2nd Param: The provided (ex1sample_test)
+3rd Param: You exercise file (ex1.asm)
+4th Param: the (run_test.sh) that is in the outer directory
+5th Param: Should include special symbols (Defaults to False):
+		- if True: checks for all symbols including special ones
+		- if False: checks only for a-z, A-Z cases, and none of the special ascii symbols

@@ -1,0 +1,17 @@
+Run Command:
+python3 py_tests_ex_4.py ex4sample_test ex4.asm ../run_test.sh  10
+
+Given:
+1st Param: test file (py_tests_ex_4.py)
+2nd Param: The provided (ex4sample_test)
+3rd Param: Your exercise file (ex4.asm)
+4th Param: the (run_test.sh) that is in the outer directory
+5th Param: number of tests to generate (Defaults to 10)
+
+Customization:
+* You can add your own basic tests in each catagories by editing the file: 'py_tests_ex_4.py'
+and adding your own lists to the designated spots.
+
+* You can Change the range on the numbers that will be generated in the list by changing the const values: "MAX_NUM", "MIN_NUM" in the file: 'increasing_series.py'
+
+* You can change the last parameter in the command (5th Param) to any positive number to indicate the amount of random tests you would like to generate in each catagory.

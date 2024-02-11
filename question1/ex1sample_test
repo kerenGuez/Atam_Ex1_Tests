@@ -1,0 +1,20 @@
+.global _start
+
+.section .text
+
+  mov $shifted, %rax
+  cmpl $65, (%rax)
+  jne bad_exit
+
+  movq $60, %rax
+  movq $0, %rdi
+  syscall
+
+bad_exit:
+  movq $60, %rax
+  movq $1, %rdi
+  syscall
+
+.section .data
+character: .byte 97
+shifted: .byte 0

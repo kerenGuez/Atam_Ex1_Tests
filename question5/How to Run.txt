@@ -1,0 +1,14 @@
+Run Command:
+python3 py_tests_ex_5.py ex5.asm ../run_test.sh 10
+
+Given:
+1st Param: test file (py_tests_ex_5.py)
+2nd Param: your exercise file (ex5.asm) 
+3rd Param: the (run_test.sh) that is in the outer directory
+4th Param: number of tests to generate (Defaults to 10)
+
+Customization:
+* You can add your own basic tests in each catagories by editing the file: 'py_tests_ex_5.py'
+and adding your own lists to the designated spots.
+
+* You can change the last parameter in the command (4th Param) to any positive number to indicate the amount of random tests you would like to generate in each catagory.

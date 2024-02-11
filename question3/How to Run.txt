@@ -1,0 +1,17 @@
+Run Command:
+python3 py_tests_ex_3.py ex3.asm ../run_test.sh 10
+
+Given:
+1st Param: test file (py_tests_ex3.py)
+2nd Param: your exercise file (ex3.asm) 
+3rd Param: the run_test.sh that is in the outer directory
+4th Param: number of tests to generate (Defaults to 10)
+
+
+Customization:
+* You can add your own basic tests by editing the function 'basic_tests' found in the file: 'py_tests_ex_3.py'
+and adding your own lists to the return command.
+
+* You can edit the range of the numbers the test lists will be generated with by editing the consts: 'MIN_NUM', 'MAX_NUM' found in file "find_inc_and_dec.py"
+
+* You can change the last parameter in the command (4th Param) to any positive number to indicate the amount of random tests you would like to generate in each catagory.
