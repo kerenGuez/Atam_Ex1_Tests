@@ -43,7 +43,7 @@ def generate_valid_dec(generate_num: int = 10):
 
 def generic_generate_invalid(good_chars: str, generate_num: int = 10, prefix: str = None):
     """Generates an invalid number of a given base."""
-    invalid = list(set(printable[:95]) - set(good_chars) - {"\"", "'", "%", "\\", ";"})
+    invalid = list(set(printable[:95]) - set(good_chars) - {"\"", "'", "%", "\\", ";", ":", ","})
     valid = list(set(good_chars))
     prefix = '' if prefix is None else prefix
     # Len 1
