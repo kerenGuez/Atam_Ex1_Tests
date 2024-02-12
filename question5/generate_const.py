@@ -79,5 +79,10 @@ def generic_generate_invalid(good_chars: str, generate_num: int = 10, prefix: st
         len3_invalid_3 = sample(invalid, 3)
         perms_3 = permutations(len3_invalid_3, 3)
         len3_3_total = [f"{prefix}{''.join(p)}" for p in perms_3]
+        final_lis = len1 + len2_1_total + len2_2_total + len3_1_total + len3_2_total + len3_3_total
+        
+        # For octal, don't use bad inputs where the second character is another prefix
+        if prefix == "0":
+            final_lis = [s for s in final_lis if (len(s) > 1 and s[1] not in ['x', 'b'])]
 
-        return len1 + len2_1_total + len2_2_total + len3_1_total + len3_2_total + len3_3_total
+        return final_lis

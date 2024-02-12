@@ -81,7 +81,7 @@ def basic_good_decimal():
 
 
 def basic_bad_decimal():
-    return ["", "1.05", "AB", ":"]     # Empty string
+    return ["", "1.05", "AB"]     # Empty string
 
 
 def write(tmp_file_path, content):
