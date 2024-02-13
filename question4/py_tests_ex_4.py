@@ -145,7 +145,7 @@ def test_increasing(sample_path, asm_file, tests_file, generate_num=10):
 
 
 def basic_semi_increasing():
-    return [5, 1, 2, 3], [1, 0, 3, 4], [1, 2, 0, 4], [1, 2, 3, 0], [4, 4, 4, 1]
+    return [5, 1, 2, 3], [1, 0, 3, 4], [1, 2, 0, 4], [1, 2, 3, 0], [4, 4, 4, 1],  [7, 10, 8, 9]
 
 
 def test_semi_increasing(sample_path, asm_file, tests_file, generate_num=10):
