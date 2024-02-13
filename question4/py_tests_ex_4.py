@@ -145,7 +145,7 @@ def test_increasing(sample_path, asm_file, tests_file, generate_num=10):
 
 
 def basic_semi_increasing():
-    return [5, 1, 2, 3], [1, -2, 3, 4], [1, 2, -3, 4], [1, 2, 3, -4], [4, 4, 4, 1]
+    return [5, 1, 2, 3], [1, 0, 3, 4], [1, 2, 0, 4], [1, 2, 3, 0], [4, 4, 4, 1]
 
 
 def test_semi_increasing(sample_path, asm_file, tests_file, generate_num=10):
@@ -177,7 +177,7 @@ def test_decreasing(sample_path, asm_file, tests_file, generate_num=10):
 
 
 def basic_more_than_1_bad():
-    return [[5, 1, 0, 3], [1, -2, -3, 4], [-1, -2, -3, 4], [4, 0, -1, -2], [5, 4, 4, -1]]
+    return [[5, 1, 0, 3], [5, 3, 2, 4], [4, 2, 1, 4], [4, 3, 2, 1], [5, 4, 4, 0]]
 
 
 def test_more_than_1_bad(sample_path, asm_file, tests_file, generate_num=10):
