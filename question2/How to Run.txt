@@ -1,0 +1,26 @@
+In order to run the first time, you must have some libraries, specified on "requirements.txt" 
+Required Installation:
+pip install -r requirements.txt
+
+Run Command:
+python3 py_tests_ex_2.py ex2.asm ../run_test.sh 10
+
+Given:
+1st Param: test file (py_tests_ex_2.py)
+2nd Param: your exercise file (ex2.asm) 
+3rd Param: the run_test.sh that is in the outer directory
+4th Param: number of tests to generate (Defaults to 10)
+
+Output:
+The tests will create a folder called "graphs" at the same path you ran them from.
+* it will override itself at every run so beware.
+* There, you can see each graph the function generated, visually, the node names will be changed from letters to numbers.
+
+
+Customization:
+* You can add your own basic tests by editing the function 'basic_tests' found in the file: 'py_tests_ex_2.py'
+and adding your own lists to the return command.
+
+* You can change the maximum amount of nodes the graphs will be generated with by changing the const "MAX_NODES" at the top of the "py_tests_ex_2.py" file.
+
+* You can change the last parameter in the command (4th Param) to any positive number to indicate the amount of random tests you would like to generate in each catagory.
