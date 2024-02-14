@@ -66,7 +66,6 @@ def visualize_graph(graph, file_name):
     nx.draw(graph, pos, with_labels=True, node_size=1000, node_color='skyblue',
             font_size=10)
     plt.savefig(file_name, dpi=300)
-    plt.show()
 
 
 if __name__ == "__main__":
